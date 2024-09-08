@@ -1,6 +1,6 @@
 FROM alpine
 
-MAINTAINER kunikada
+AINTAINER vries2k
 
 RUN apk add --update --no-cache postfix cyrus-sasl \
   && { \
