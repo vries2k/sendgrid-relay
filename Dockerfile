@@ -20,6 +20,6 @@ RUN chmod +x /docker-entrypoint.sh
 RUN  cp /etc/postfix/main.cf /main.cf.orig \
   && cp /etc/postfix/aliases /aliases.orig
 
-EXPOSE 25
+EXPOSE 587
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
