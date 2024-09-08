@@ -1,8 +1,8 @@
 FROM alpine
 
-AINTAINER vries2k
+MAINTAINER vries2k
 
-RUN apk add --update --no-cache postfix cyrus-sasl \
+RUN apk add --update --no-cache postfix cyrus-sasl cyrus-sasl-login \
   && { \
   echo "mydestination = \$myhostname, localhost.\$mydomain, localhost, \$mydomain"; \
   echo "mynetworks = 127.0.0.0/8 10.0.0.0/8 172.16.0.0/12 192.168.0.0/16"; \
